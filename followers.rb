@@ -46,7 +46,7 @@ class Follower
     
     def self.top_ten
         all.max_by(10) do |follower|
-            -follower.cults.count
+            follower.cults.count
         end    
     end    
 
